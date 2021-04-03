@@ -8,6 +8,7 @@
 git init 
 git add . or git add <filename>
 git commit -m "<message>"
+git push origin master or git push origin -u master 
 ````
 
 ### Create new remote
