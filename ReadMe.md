@@ -27,3 +27,15 @@ git checkout -b <newbranch> // create branch
 git checkout <master or branch>
 ````
 
+
+
+### Git Merge & Diff
+
+````
+git diff // only compare it with previous one
+git diff <namabranch> // it means compare current brnch/master to namabranch
+git merge <namabranch|master> //it means you will merge <namabranch|master> to current  								branch
+
+
+````
+
