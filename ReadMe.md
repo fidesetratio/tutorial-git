@@ -48,3 +48,21 @@ git reset HEAD~1  // back to stage one
 git reset --hard HEAD~1 //complete rollback to previous one
 ````
 
+### Git logs
+
+````
+git log
+git log --oneline
+
+````
+
+### Specific file to change to previous one
+
+````
+git show 6f5ea:testdata/data.txt 
+git checkout 6f5ea testdata/data.txt
+git commit -m "uncheckone"
+git status
+
+````
+
