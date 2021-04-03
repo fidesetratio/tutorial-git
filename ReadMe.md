@@ -39,3 +39,12 @@ git merge <namabranch|master> //it means you will merge <namabranch|master> to c
 
 ````
 
+
+
+### Undoing Commit
+
+````
+git reset HEAD~1  // back to stage one
+git reset --hard HEAD~1 //complete rollback to previous one
+````
+
