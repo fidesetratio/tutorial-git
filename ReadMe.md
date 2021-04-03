@@ -15,6 +15,14 @@ git commit -m "<message>"
 ````
 git remote add origin <linkofgitremote>
 git remote -v
+	
+````
 
+### Git Branching
+
+````
+git branch // show branch
+git checkout -b <newbranch> // create branch
+git checkout <master or branch>
 ````
 
