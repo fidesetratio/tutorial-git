@@ -55,7 +55,15 @@ git log
 git log --oneline
 
 ````
+### REBASE BRANCH TO MASTE
+````
 
+
+git checkout feature
+git rebase main
+
+
+````
 ### Specific file to change to previous one
 
 ````
