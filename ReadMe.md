@@ -74,3 +74,11 @@ git status
 
 ````
 
+### change branch to master
+````
+git checkout <branch_name>
+git merge --strategy=ours master    # keep the content of this branch, but record a merge
+git checkout master
+git merge <branch_name>            # fast-forward master up to the merge
+git push origin master
+````
