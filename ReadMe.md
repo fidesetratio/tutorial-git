@@ -99,3 +99,33 @@ beda nya development..master
 + artinya itu dari master
 
 ```
+### tips and trick jika ngak ada tools untuk lihat hasil perubahan
+```
+			-          + 
+git diff --name-only development..master
+git diff --name-only development..HEAD
+
+
+git diff --name-only -z --diff-filter=ACMRT  origin/testbranch..origin/master | xargs -0 git archive -o update.tar.gz origin/master --
+git diff --name-only -z --diff-filter=ACMRT  origin/master..origin/testbranch | xargs -0 git archive -o update-dev.tar.gz origin/testbranch --
+
+
+beda nya development..master
+- artinya dari development
++ artinya itu dari master
+
+git diff  development..master -- src/main/java/com/app/controller/AdMedikaController.java
+
+
+
+
+git remote add temp https://github.com/fidesetratio/problemku
+git remote -v
+git push temp namabranch
+			-          + 
+
+Note : gunakan public git repository
+
+			
+			
+```
