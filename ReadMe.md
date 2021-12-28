@@ -82,3 +82,19 @@ git checkout master
 git merge <branch_name>            # fast-forward master up to the merge
 git push origin master
 ````
+
+
+### getting all changes one and compare it manually
+```
+			-          + 
+git diff --name-only development..master
+git diff --name-only development..HEAD
+
+git diff --name-only -z --diff-filter=ACMRT development..HEAD | xargs -0 git archive -o update.tar.gz HEAD --
+git diff --name-only -z --diff-filter=ACMRT HEAD..development | xargs -0 git archive -o update-dev.tar.gz development --
+
+beda nya development..master
+- artinya dari development
++ artinya itu dari master
+
+```
