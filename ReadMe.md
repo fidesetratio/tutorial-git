@@ -84,7 +84,7 @@ git push origin master
 ````
 
 
-### getting all changes one and compare it manually
+### getting all changes one and compare it manually per branch
 ```
 			-          + 
 git diff --name-only development..master 
