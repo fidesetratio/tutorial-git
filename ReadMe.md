@@ -87,7 +87,8 @@ git push origin master
 ### getting all changes one and compare it manually
 ```
 			-          + 
-git diff --name-only development..master
+git diff --name-only development..master 
+or
 git diff --name-only development..HEAD
 
 git diff --name-only -z --diff-filter=ACMRT development..HEAD | xargs -0 git archive -o update.tar.gz HEAD --
