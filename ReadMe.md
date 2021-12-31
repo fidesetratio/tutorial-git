@@ -129,3 +129,16 @@ Note : gunakan public git repository
 			
 			
 ```
+### Git memaksa agar mereplace content branch atau master dengan new one
+```
+ git push -f origin master
+  or
+ git push -f origin <nama_branch> 
+```
+
+
+### Git log commit agar bagus
+```
+ git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+ git lol
+```
