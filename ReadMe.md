@@ -142,3 +142,19 @@ Note : gunakan public git repository
  git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
  git lol
 ```
+### Git untuk stash
+```
+Stash
+
+ git stash save "Message"
+ git stash list
+ git stash apply stash@{0} => ini dilakukan jika emang tidak perlu delete stash dari list
+ git stash pop ==>  ini di lakukan jika ingin mau ambil stash yang terakhir
+ git stash drop stash@{1} ==> delete stash
+ git stash clear ==> delete all stsash
+ git stash branch my-branch ==> tolong apply stash branch ke new branch my-branch
+ git stash show stash@{2} ==> Please use this to show stash detail
+ git stash -u ==> ini untuk menstash semua data yang belum di commit kecuali .gitignore
+ git stash -all ==> ini untuk menstash semua data yang belum di commit 
+ 
+```
